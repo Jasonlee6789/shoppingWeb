@@ -288,23 +288,9 @@
 
 .mod_help dl:last-child {
     width: 90px;
-    text-align: center;
 }
 
 .mod_help dl dt {
     font: 16px;
     margin-bottom: 10px;
-}
-
-.mod_copyright {
-    text-align: center;
-    padding-top: 20px;
-}
-
-.links {
-    margin-bottom: 15px;
-}
-
-.links a {
-    margin: 0 3px;
 }
