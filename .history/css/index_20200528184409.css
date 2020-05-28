@@ -21,8 +21,7 @@
 
 .news {
     height: 165px;
-    border: 1px solid #e4e4e4;
-    /* background-color: pink; */
+    background-color: pink;
 }
 
 .news-hd {
@@ -47,47 +46,14 @@
     content: '\ea51';
 }
 
-
-.news-bd {
-    padding: 5px 15px 0;
-}
-
 .news-bd ul li {
     height: 24px;
     line-height: 24px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 }
 
 .lifeservice {
     height: 209px;
-    /* background-color: purple; */
-    border: 1px solid #e4e4e4;
-    border-top: 0;
-    overflow: hidden;
-}
-
-.lifeservice ul {
-    width: 252px;
-}
-
-.lifeservice ul li {
-    float: left;
-    width: 63px;
-    height: 71px;
-    border-right: 1px solid #e4e4e4;
-    border-bottom: 1px solid #e4e4e4;
-    text-align: center;
-}
-
-.lifeservice ul li i {
-    display: inline-block;
-    width: 24px;
-    height: 28px;
-    background-color: pink;
-    margin-top: 12px;
-    background: url(../images/icons.png) no-repeat -19px -15px;
+    background-color: purple;
 }
 
 .bargin {

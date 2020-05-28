@@ -55,9 +55,6 @@
 .news-bd ul li {
     height: 24px;
     line-height: 24px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 }
 
 .lifeservice {
@@ -65,11 +62,6 @@
     /* background-color: purple; */
     border: 1px solid #e4e4e4;
     border-top: 0;
-    overflow: hidden;
-}
-
-.lifeservice ul {
-    width: 252px;
 }
 
 .lifeservice ul li {
@@ -78,16 +70,6 @@
     height: 71px;
     border-right: 1px solid #e4e4e4;
     border-bottom: 1px solid #e4e4e4;
-    text-align: center;
-}
-
-.lifeservice ul li i {
-    display: inline-block;
-    width: 24px;
-    height: 28px;
-    background-color: pink;
-    margin-top: 12px;
-    background: url(../images/icons.png) no-repeat -19px -15px;
 }
 
 .bargin {

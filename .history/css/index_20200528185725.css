@@ -55,9 +55,6 @@
 .news-bd ul li {
     height: 24px;
     line-height: 24px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 }
 
 .lifeservice {
