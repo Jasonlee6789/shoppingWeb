@@ -190,25 +190,3 @@
     height: 465px;
     background-color: #c81623;
 }
-
-.dropdown .dd ul li {
-    height: 31px;
-    line-height: 31px;
-    margin-left: 3px;
-    margin-right: 3px;
-    padding-left: 10px;
-}
-
-.dropdown .dd ul li:hover {
-    background-color: #fff;
-}
-
-.dropdown .dd ul li a {
-    font-size: 14px;
-    color: #fff;
-
-}
-
-.dropdown .dd ul li:hover a {
-    color: #c81623;
-}
