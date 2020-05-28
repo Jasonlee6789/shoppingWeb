@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+em,
+i {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
