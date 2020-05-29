@@ -54,11 +54,7 @@
     height: 460px;
     border: 1px solid transparent;
     float: left;
-    margin-right: 13px;
-}
-
-.sk_bd ul li:nth-child(4n) {
-    margin-right: 0;
+    margin-left: 13px;
 }
 
 .sk_bd ul li:hover {

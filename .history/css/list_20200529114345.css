@@ -57,10 +57,6 @@
     margin-right: 13px;
 }
 
-.sk_bd ul li:nth-child(4n) {
-    margin-right: 0;
-}
-
 .sk_bd ul li:hover {
     border: 1px solid #c81523;
 }
