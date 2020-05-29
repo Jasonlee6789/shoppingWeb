@@ -167,7 +167,7 @@
 
 .box_bd {
     height: 361px;
-    /* background-color: pink; */
+    background-color: pink;
 }
 
 .tab_list_item>div {
@@ -179,8 +179,6 @@
 .col_210 {
     width: 210px;
     background-color: #f9f9f9;
-    text-align: center;
-    ;
 
 }
 
@@ -204,14 +202,8 @@
 
 .col_221 {
     width: 221px;
-    border-right: 1px solid #ccc;
 }
 
 .col_219 {
     width: 219px;
-}
-
-.bb {
-    display: block;
-    border-bottom: 1px solid #ccc;
 }
