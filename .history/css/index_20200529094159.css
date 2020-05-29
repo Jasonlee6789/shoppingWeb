@@ -119,13 +119,9 @@
     float: left;
 }
 
-.recom_bd ul li img {
-    width: 248px;
-    height: 163px;
-}
 
 
-.recom_bd ul li:nth-child(-n+3)::after {
+.recom_bd ul li::after {
     content: '';
     position: absolute;
     right: 0;
