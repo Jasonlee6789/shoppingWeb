@@ -6,10 +6,70 @@
 }
 
 .focus {
+    position: relative;
     float: left;
     width: 721px;
     height: 455px;
     background-color: purple;
+    overflow: hidden;
+}
+
+.focus ul {
+    width: 700%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.focus ul li {
+    float: left;
+}
+
+.arrow-l,
+.arrow-r {
+    /* 比默认的高一个层级的就行 */
+    z-index: 2;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: auto;
+    right: 0;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.4);
+    line-height: 40px;
+    color: #fff;
+}
+
+.arrow-l {
+    left: 0;
+}
+
+.arrow-r {
+    right: 0;
+}
+
+.circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+
+.circle li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 0 6px;
+    border-radius: 50%;
+    /* 鼠标经过显示小手 */
+    cursor: pointer;
+}
+
+.current {
+    background-color: #fff;
+    box-shadow: 0;
 }
 
 .newsflash {
