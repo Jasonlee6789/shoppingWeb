@@ -12,6 +12,7 @@ function animate(obj, target, callback) {
         if (obj.offsetLeft == target) {
             // 停止动画 本质是停止定时器
             clearInterval(obj.timer);
+
             // 回调函数写到定时器结束里面
             // if (callback) {
             //     // 调用函数

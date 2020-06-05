@@ -38,23 +38,31 @@ window.addEventListener('load', function () {
     ol.children[0].className = 'current';
     var first = ul.children[0].cloneNode(true);
     ul.appendChild(first);
+
+
     var num = 0;
     var circle = 0;
+    var flag = true;
     arrow_r.addEventListener('click', function () {
-        if (num == ul.children.length - 1) {
-            ul.style.left = 0;
-            num = 0;
+        if (flag) {
+            flag = false;
+            if (num == ul.children.length - 1) {
+                ul.style.left = 0;
+                num = 0;
+            }
+            num++;
+            animate(ul, -num * focusWidth, function () {
+                flag = true;
+            });
+            circle++;
+            if (circle == ol.children.length) {
+                circle = 0;
+            }
+            for (var i = 0; i < ol.children.length; i++) {
+                ol.children[i].className = '';
+            }
+            ol.children[circle].className = 'current';
         }
-        num++;
-        animate(ul, -num * focusWidth);
-        circle++;
-        if (circle == ol.children.length) {
-            circle = 0;
-        }
-        for (var i = 0; i < ol.children.length; i++) {
-            ol.children[i].className = '';
-        }
-        ol.children[circle].className = 'current';
     });
     arrow_l.addEventListener('click', function () {
         if (num == 0) {
@@ -77,4 +85,32 @@ window.addEventListener('load', function () {
     var timer = this.setInterval(function () {
         arrow_r.click();
     }, 2000);
+    //1.显示隐藏电梯导航
+    var toolTop = $(".recom_hd").offset().top;
+
+    $(window).scroll(function () {
+        if ($(document).scrollTop() >= toolTop) {
+            $(".fixedtool").fadeIn();
+        } else {
+            $(".fixedtool").fadeOut();
+        }
+        //4.左侧电梯导航当页面滚动到某个内容区域，可以添加或者删除红色类名
+        $(".floor .w").each(function (i, ele) {
+            if ($(document).scrollTop() >= $(ele).offset().top) {
+                $(".fixedtool li").eq(i).addClass("current").siblings().removeClass();
+            }
+
+        })
+    });
+    //2.点击电梯导航页面可以滚动到相应内容区域
+    $(".fixedtool li").click(function () {
+        //当我每次点击小li,求去往的位置：选出对应索引号的内容去的盒子的.offset().top就是电梯要去的位置了
+        var current = $(".floor .w").eq($(this).index()).offset().top;
+        //添加页面滚动效果，注意是body html
+        $("body, html").stop().animate({
+            scrollTop: current
+        });
+    });
+    //3.左侧电梯导航添加红色类名
+    $(this).addClass("current").siblings().removeClass();
 })
